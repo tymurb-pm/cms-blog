@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: your-username/your-blog-repo # Your main blog repo
+  repo: tymurb-pm/cms-blog # Your main blog repo
   branch: main # Change if needed
   site_domain: buiadzhi.com
   base_url: https://cms-buiadzhi.netlify.app # Netlify-hosted CMS
