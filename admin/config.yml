@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: your-username/your-blog-repo # Your main blog repo
+  branch: main # Change if needed
+  site_domain: buiadzhi.com
+  base_url: https://cms.yourwebsite.com # Netlify-hosted CMS
+
+media_folder: "static/uploads" # Store media on Netlify
+public_folder: "/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
